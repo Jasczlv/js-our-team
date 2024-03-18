@@ -39,7 +39,7 @@ for (let i = 0; i < 6; i++) {
   console.log(arrayTeam[i].foto);
   div.innerHTML += `<div> ${arrayTeam[i].nome}</div>`;
   div.innerHTML += `<div> ${arrayTeam[i].ruolo}</div>`;
-  div.innerHTML += `<div> ${arrayTeam[i].foto}</div>`;
+  div.innerHTML += `<img src="./img/${arrayTeam[i].foto}"></img>`;
 }
 
 // let arrayObject = [];

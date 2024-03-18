@@ -33,14 +33,23 @@ const arrayTeam = [
 
 const div = document.getElementById("contenitore");
 
-let arrayObject = [];
-
 for (let i = 0; i < 6; i++) {
-  console.log(arrayTeam[i]);
-  arrayObject = arrayTeam[i];
-  console.log(arrayObject);
-  for (let key in arrayObject) {
-    div.innerHTML += `<div> ${arrayObject[key]}</div>`;
-    console.log(arrayObject[key]);
-  }
+  console.log(arrayTeam[i].nome);
+  console.log(arrayTeam[i].ruolo);
+  console.log(arrayTeam[i].foto);
+  div.innerHTML += `<div> ${arrayTeam[i].nome}</div>`;
+  div.innerHTML += `<div> ${arrayTeam[i].ruolo}</div>`;
+  div.innerHTML += `<div> ${arrayTeam[i].foto}</div>`;
 }
+
+// let arrayObject = [];
+
+// for (let i = 0; i < 6; i++) {
+//   console.log(arrayTeam[i]);
+//   arrayObject = arrayTeam[i];
+//   console.log(arrayObject);
+//   for (let key in arrayObject) {
+//     div.innerHTML += `<div> ${arrayObject[key]}</div>`;
+//     console.log(arrayObject[key]);
+//   }
+// }
